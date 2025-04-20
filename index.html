@@ -296,7 +296,7 @@
       if (file) form.append('image', file);
 
       try {
-        const res = await fetch('http://localhost:5000/api/diagnose', {
+        const res = await fetch('https://repairiq-production.up.railway.app/api/diagnose', {
           method: 'POST', body: form
         });
         const data = await res.json();
